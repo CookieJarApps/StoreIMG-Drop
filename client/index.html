@@ -5,29 +5,22 @@
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <!-- Web App Config -->
-    <title>Snapdrop</title>
+    <title>StoreIMG Drop</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="theme-color" content="#3367d6">
     <meta name="color-scheme" content="dark light">
     <meta name="apple-mobile-web-app-capable" content="no">
-    <meta name="apple-mobile-web-app-title" content="Snapdrop">
+    <meta name="apple-mobile-web-app-title" content="StoreIMG Drop">
     <!-- Descriptions -->
-    <meta property="og:title" content="Snapdrop">
+    <meta property="og:title" content="StoreIMG Drop">
     <meta property="og:type" content="article">
-    <meta property="og:url" content="https://snapdrop.net/">
-    <meta property="og:author" content="https://facebook.com/RobinLinus">
-    <meta name="twitter:author" content="@RobinLinus">
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:description" content="Instantly share images, videos, PDFs, and links with people nearby. Peer2Peer and Open Source. No Setup, No Signup.">
-    <meta name="og:description" content="Instantly share images, videos, PDFs, and links with people nearby. Peer2Peer and Open Source. No Setup, No Signup.">
+    <meta property="og:url" content="https://new.storeimg.com">
     <!-- Icons -->
     <link rel="icon" sizes="96x96" href="images/favicon-96x96.png">
     <link rel="shortcut icon" href="images/favicon-96x96.png">
     <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
     <meta name="msapplication-TileImage" content="images/mstile-150x150.png">
     <link rel="fluid-icon" type="image/png" href="images/android-chrome-192x192.png">
-    <meta name="twitter:image" content="https://snapdrop.net/images/twitter-stream.jpg">
-    <meta property="og:image" content="https://snapdrop.net/images/twitter-stream.jpg">
     <!-- Resources -->
     <link rel="stylesheet" type="text/css" href="styles.css">
     <link rel="manifest" href="manifest.json">
@@ -56,10 +49,13 @@
             </svg>
         </a>
     </header>
+    <x-qr class="center">
+
+    </x-qr>
     <!-- Peers -->
     <x-peers class="center"></x-peers>
     <x-no-peers>
-        <h2>Open Snapdrop on other devices to send files</h2>
+        <h2>Scan the QR code or share this url to send files</h2>
     </x-no-peers>
     <x-instructions desktop="Click to send files or right click to send a message" mobile="Tap to send files or long tap to send a message"></x-instructions>
     <!-- Footer -->
@@ -68,7 +64,7 @@
             <use xlink:href="#wifi-tethering" />
         </svg>
         <div id="displayName" placeholder="The easiest way to transfer data across devices"></div>
-        <div class="font-body2">You can be discovered by everyone on this network</div>
+        <div class="font-body2">You can be discovered by everyone with this link</div>
     </footer>
     <!-- Receive Dialog -->
     <x-dialog id="receiveDialog">
@@ -79,7 +75,7 @@
                 <div class="font-body2" id="fileSize"></div>
                 <div class="row">
                     <label for="autoDownload" class="grow">Ask to save each file before downloading</label>
-                    <input type="checkbox" id="autoDownload" checked=""> 
+                    <input type="checkbox" id="autoDownload" checked="">
                 </div>
                 <div class="row-reverse">
                     <a class="button" close id="download" title="Download File" autofocus>Save</a>
@@ -133,25 +129,20 @@
             <svg class="icon logo">
                 <use xlink:href="#wifi-tethering" />
             </svg>
-            <h1>Snapdrop</h1>
+            <h1>StoreIMG Drop</h1>
             <div class="font-subheading">The easiest way to transfer files across devices</div>
             <div class="row">
-                <a class="icon-button" target="_blank" href="https://github.com/RobinLinus/snapdrop" title="Snapdrop on Github" rel="noreferrer">
+                <a class="icon-button" target="_blank" href="https://github.com/CookieJarApps/StoreIMG-Drop" title="StoreIMG on Github" rel="noreferrer">
                     <svg class="icon">
                         <use xlink:href="#github" />
                     </svg>
                 </a>
-                <a class="icon-button" target="_blank" href="https://www.paypal.com/donate?hosted_button_id=FTP9DXUR7LA7Q" title="Help cover the server costs!" rel="noreferrer">
+                <a class="icon-button" target="_blank" href="https://www.buymeacoffee.com/cookiejarapps" title="Help cover the server costs!" rel="noreferrer">
                     <svg class="icon">
                         <use xlink:href="#monetarization" />
                     </svg>
                 </a>
-                <a class="icon-button" target="_blank" href="https://twitter.com/intent/tweet?text=https://snapdrop.net%20by%20@robin_linus%20&" title="Tweet about Snapdrop" rel="noreferrer">
-                    <svg class="icon">
-                        <use xlink:href="#twitter" />
-                    </svg>
-                </a>
-                <a class="icon-button" target="_blank" href="https://github.com/RobinLinus/snapdrop/blob/master/docs/faq.md" title="Frequently asked questions" rel="noreferrer">
+                <a class="icon-button" target="_blank" href="https://github.com/CookieJarApps/StoreIMG-Drop/blob/master/docs/faq.md" title="Frequently asked questions" rel="noreferrer">
                     <svg class="icon">
                         <use xlink:href="#help-outline" />
                     </svg>
@@ -219,7 +210,7 @@
     <noscript>
         <x-noscript class="full center column">
             <h1>Enable Javascript</h1>
-            <h3>Snapdrop works only with Javascript</h3>
+            <h3>StoreIMG Drop works only with Javascript</h3>
         </x-noscript>
         <style>
         x-noscript {
