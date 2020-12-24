@@ -2,7 +2,7 @@
 
 :root {
     --icon-size: 24px;
-    --primary-color: #4285f4;
+    --primary-color: #fcb045;
     --peer-width: 120px;
     color-scheme: light dark;
 }
@@ -80,8 +80,10 @@ header {
 
 /* Typography */
 
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;700;900&display=swap');
+
 body {
-    font-family: -apple-system, BlinkMacSystemFont, Roboto, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-family: 'Roboto', sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
@@ -174,6 +176,16 @@ body>header a {
     margin-left: 8px;
 }
 
+x-qr {
+    border-radius: 4px;
+    overflow: hidden;
+    margin: 16px;
+    animation: fade-in 300ms;
+    animation-delay: 500ms;
+    animation-fill-mode: backwards;
+}
+
+
 /* Peers List */
 
 x-peers {
@@ -223,8 +235,6 @@ x-peer label {
 
 x-peer .name {
     width: var(--peer-width);
-    white-space: nowrap;
-    overflow: hidden;
     text-overflow: ellipsis;
     text-align: center;
 }
