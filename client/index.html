@@ -58,9 +58,10 @@
         <h2>Scan the QR code or share the room code '<x-code></x-code>' to send files</h2>
     </x-no-peers>
     <p>--or--</p>
+    <p class="alert" style="display: none;" id="error">Invalid room code</p>
     <form onsubmit="return test();" style="margin-bottom: 32px;">
-        <input type="text" id="id" name="id" placeholder="Enter room code"> 
-        <input type="submit" value="Join Room"> 
+        <input type="text" id="id" name="id" class="input" placeholder="Enter room code"> 
+        <input type="submit" class="button" value="Join Room" style="margin: 0 auto;"> 
     </form>
     <x-instructions desktop="Click to send files or right click to send a message" mobile="Tap to send files or long tap to send a message"></x-instructions>
     <!-- Footer -->
