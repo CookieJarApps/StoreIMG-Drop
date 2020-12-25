@@ -503,6 +503,21 @@ textarea {
     background: #f1f3f4;
 }
 
+.input {
+    width: 100%;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    padding: 16px 24px;
+    border-radius: 16px;
+    margin: 8px 0;
+    line-height: 16px;
+    font-size: 14px;
+    font-family: inherit;
+    resize: none;
+    background: #f1f3f4;
+}
+
 
 /* Info Animation */
 
@@ -740,4 +755,10 @@ textarea {
         --bg-color: #fafafa;
         --bg-color-secondary: #f1f3f4;
     }
+}
+
+.alert{
+    background-color: rgb(253, 236, 234);
+    border-radius: 4px;
+    padding: 8px;
 }
