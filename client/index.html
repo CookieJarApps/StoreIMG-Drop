@@ -58,13 +58,13 @@
         <h2>Scan the QR code or share the room code '<x-code></x-code>' to send files</h2>
     </x-no-peers>
     <p>--or--</p>
-    <form onsubmit="return test();">
+    <form onsubmit="return test();" style="margin-bottom: 32px;">
         <input type="text" id="id" name="id" placeholder="Enter room code"> 
         <input type="submit" value="Join Room"> 
     </form>
     <x-instructions desktop="Click to send files or right click to send a message" mobile="Tap to send files or long tap to send a message"></x-instructions>
     <!-- Footer -->
-    <footer class="column">
+    <footer>
         <img src="images/256.png" height="80" />
         <div id="displayName" placeholder="The easiest way to transfer data across devices"></div>
         <div class="font-body2">You can be discovered by everyone with this link</div>
