@@ -178,8 +178,7 @@ body>header a {
 
 x-qr {
     border-radius: 4px;
-    overflow: hidden;
-    margin: 16px;
+    margin-top: 25vh;
     animation: fade-in 300ms;
     animation-delay: 500ms;
     animation-fill-mode: backwards;
@@ -306,7 +305,7 @@ x-peer[drop] x-icon {
 /* Footer */
 
 footer {
-    position: absolute;
+    margin-top: auto;
     bottom: 0;
     left: 0;
     right: 0;
